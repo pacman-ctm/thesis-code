@@ -4,9 +4,13 @@ This is the source code that is used in the graduation thesis of Pham Anh Cuong 
 ### About the folders:
 
 - Data_making: About the code for creating image captioning dataset. 
-- Train: About the training phase code.
-- Inference: About the inference phase code (usually after getting the snapshot after the training phase).
-- Eval: About the evaluation phase of the models.
+- Train: About the training phase code. (Update 2024: The v1, v2 version are added because there might be some bugs in the initial version, but you should use the GRIT model below for more accurate result).
+- Inference: About the inference phase code (usually after getting the snapshot after the training phase). The v2 version contains some code to export captions to json files to evaluate.
+- Simple_Evaluate: About the evaluation phase of the models.
+
+### Some notes:
+- In my humble opinion, because my contribution is mostly the dataset, the code might be bad from my point of view because I just want to test my dataset. I think you should create your own code (for the 2 first models I noted below) using the dataset :D, or follow the vicap branch of GRIT repository noted below.
+- Because most of my code files are used in the Google Colab platform, there might be some conflict if you clone this one, what you need to do is change the path in the source code and move the respective files to the correct directory as in the source code.
 
 ### About the models:
 For my graduation thesis, I use three models with its architecture as follows:
